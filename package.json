@@ -1,0 +1,24 @@
+{
+  "name": "terraform-aks-pipeline",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vishal-Vekariya/terraform-aks-pipeline.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vishal-Vekariya/terraform-aks-pipeline/issues"
+  },
+  "homepage": "https://github.com/Vishal-Vekariya/terraform-aks-pipeline#readme",
+  "description": "",
+  "devDependencies": {
+    "husky": "^8.0.0"
+  }
+}
