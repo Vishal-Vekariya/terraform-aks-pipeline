@@ -10,16 +10,22 @@ on:
 
 jobs:
   terraform-validate:
+    name: Validate Terraform
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      
+
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v2
-      
+        with:
+          terraform_version: 1.5.7 # Change this to your Terraform version
+
       - name: Initialize Terraform
         run: terraform init
-      
+
       - name: Validate Terraform configuration
         run: terraform validate
+
+      - name: Check Terraform formatting
+        run: terraform fmt -check
